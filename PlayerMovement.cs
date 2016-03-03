@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+/// <summary>
+///  Player movement by using arrow keys.
+///  Includes HP counter and Spaceship part counter.
+/// </summary>
+
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System;
@@ -19,7 +24,6 @@ public class PlayerMovement : MonoBehaviour {
 
 	public ArrayList playerInventory = new ArrayList();
 	
-	// Use this for initialization
 	void Start () {
 		rbody = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
@@ -32,7 +36,6 @@ public class PlayerMovement : MonoBehaviour {
 		SetCountHealth ();
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		if (fader.isFading == false) {
 			Vector2 movement_vector = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
