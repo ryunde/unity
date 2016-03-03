@@ -13,7 +13,6 @@ public class CollisionMessage : MonoBehaviour {
 	private Text message;
 	public static bool onHold;
 
-	// Use this for initialization
 	void Start () {
 
 		message = GameObject.Find("RelicMessage1").GetComponent<Text>();
@@ -22,7 +21,6 @@ public class CollisionMessage : MonoBehaviour {
 
 	}
 	
-	// Update is called once per frame
 	void OnTriggerEnter2D(Collider2D other) {
 			if (other.gameObject.tag == "Player") {
 				message.text = "You have collected a spaceship part!";
