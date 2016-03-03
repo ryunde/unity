@@ -1,4 +1,8 @@
-﻿using System.Diagnostics;
+/// <summary>
+///Shows message when a spaceship part is found on the map and destroys object.
+/// </summary>
+
+using System.Diagnostics;
 using System.Net.Mime;
 using UnityEngine;
 using UnityEngine.UI;
