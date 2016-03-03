@@ -1,4 +1,9 @@
-﻿using System.Diagnostics;
+/// <summary>
+///  The message that shows at the beginning, telling you what to do and showing
+///  a bigger picture of your character.
+/// </summary>
+
+using System.Diagnostics;
 using System.Net.Mime;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +15,6 @@ public class StartMessage : MonoBehaviour {
 	private Image doctorstart;
 	public static bool onHold;
 	
-	// Use this for initialization
 	void Start () {
 		
 		message = GameObject.Find("StartMessage").GetComponent<Text>();
@@ -22,7 +26,6 @@ public class StartMessage : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.tag == "Player") {
 			message.text = "I should find a way to go back home.";
