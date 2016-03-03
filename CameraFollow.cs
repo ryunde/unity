@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+/// <summary>
+///  Camera follows player.
+/// </summary>
+
+using UnityEngine;
 using System.Collections;
 
 public class CameraFollow : MonoBehaviour {
