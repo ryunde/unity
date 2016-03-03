@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+/// <summary>
+///  Transferring player from the end of the map to another map and fading screen.
+/// </summary>
+
+using UnityEngine;
 using System.Collections;
 
 public class Warp : MonoBehaviour {
