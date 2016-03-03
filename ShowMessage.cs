@@ -1,4 +1,9 @@
-﻿using System.Diagnostics;
+/// <summary>
+///  When entering the spaceship, it will either tell you to find more spaceship
+///  part or fade the screen and quit application, depending on your score.
+/// </summary>
+
+using System.Diagnostics;
 using System.Net.Mime;
 using UnityEngine;
 using UnityEngine.UI;
