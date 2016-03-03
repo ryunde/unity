@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+/// <summary>
+///  Enemy finds the player on map and move towards it.
+/// </summary>
+
+using UnityEngine;
 using System.Collections;
 using System;
 
@@ -11,7 +15,6 @@ public class EnemyBehavior : MonoBehaviour {
 	public Transform target;
 	public float speed = 0.5f;
 
-	// Use this for initialization
 	void Start () {
 
 		rigid = GetComponent<Rigidbody2D> ();
@@ -23,7 +26,6 @@ public class EnemyBehavior : MonoBehaviour {
 	
 	}
 	
-	// Update is called once per frame
 	public void Update () {
 
 		if (target != null) {
