@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+/// <summary>
+///  Animation to make the screen fade black and then back to clear.
+/// </summary>
+
+using UnityEngine;
 using System.Collections;
 
 public class ScreenFader : MonoBehaviour {
@@ -6,7 +10,6 @@ public class ScreenFader : MonoBehaviour {
 	Animator anim;
 	public bool isFading = false;
 
-	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
 	
